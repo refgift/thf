@@ -19,7 +19,7 @@
 #define EPOCHS 15
 
 #define THIEF 75
-#define NUMBER 222
+#define NUMBER 2222
 
 int rnd(){
 	static int r;
@@ -110,11 +110,11 @@ int main(void) {
              A=NUMBER;
              usleep(110000);
              A=0;
-//             putchar('!');
+             putchar('!');
         }
         sched_yield();
-//        putchar('.');
-//        fflush(stdout);
+        putchar('.');
+        fflush(stdout);
    }
 
   return 0;
