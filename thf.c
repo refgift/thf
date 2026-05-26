@@ -22,7 +22,7 @@
 #define NUMBER 222
 
 int rnd(){
-	int r;
+	static int r;
 	asm("1: rdrand %0; jnc 1":"=r"(r));
 	return r;
 }
@@ -116,5 +116,6 @@ int main(void) {
 //        putchar('.');
 //        fflush(stdout);
    }
-  return 0;
+
+  return 0;
 }
